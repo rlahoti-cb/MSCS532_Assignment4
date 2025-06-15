@@ -1,0 +1,12 @@
+>>>
+Priority queue time complexity with heap size of 100000
+Insert Time: 0.039422035217285156
+Extraction Time: 0.48883509635925293
+Increase Key Time: 0.12868475914001465
+
+
+>>>
+Priority queue time complexity with heap size of 1000000
+Insert Time: 0.40662503242492676
+Extraction Time: 5.804657936096191
+Increase Key Time: 1.136415958404541
