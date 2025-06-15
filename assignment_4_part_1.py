@@ -1,6 +1,7 @@
 import random
 import time
 
+# handle heapify operations for the heapsort algorithm
 def heapify(inp, n, i):
     maximum = i
     left, right = 2 * i + 1, 2 * i + 2
@@ -15,6 +16,7 @@ def heapify(inp, n, i):
         inp[i], inp[maximum] = inp[maximum], inp[i]
         heapify(inp, n, maximum)
 
+# drives the heapsort algorithm
 def heapsort(inp):
     n = len(inp)
 
@@ -41,23 +43,28 @@ def generate_reversed_sorted_data(size):
     return out
 
 def part_1_analysis():
+    # run experiment for input data on varying sizes
     for size in (10000, 100000, 1000000):
+        # generate random, sorted, and reversed sorted data
         random_data = generate_random_data(size)
         sorted_data = generate_sorted_data(size)
         reversed_sorted_data = generate_reversed_sorted_data(size)
 
+        # run heapsort on random data and capture time taken
         start_time = time.time()
         heapsort(random_data)
         end_time = time.time()
         print("Applying heapsort to " + str(size) + " random elements took " + str(end_time - start_time) + "\n")
 
+        # run heapsort on sorted data and capture time taken
         start_time = time.time()
         heapsort(sorted_data)
         end_time = time.time()
         print("Applying heapsort to " + str(size) + " sorted elements took " + str(end_time - start_time) + "\n")
 
+        # run heapsort on reversed sorted data and capture time taken
         start_time = time.time()
-        heapsort(sorted_data)
+        heapsort(reversed_sorted_data)
         end_time = time.time()
         print("Applying heapsort to " + str(size) + " reversed sorted elements took " + str(end_time - start_time) + "\n")
 
