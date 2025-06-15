@@ -1,0 +1,61 @@
+>> Heapsort 
+
+Applying heapsort to 100000 random elements took 1.3778460025787354
+
+Applying heapsort to 100000 sorted elements took 1.3236579895019531
+
+Applying heapsort to 100000 reversed sorted elements took 1.2304942607879639
+
+Applying heapsort to 1000000 random elements took 32.72107195854187
+
+Applying heapsort to 1000000 sorted elements took 14.701857089996338
+
+Applying heapsort to 1000000 reversed sorted elements took 14.106586933135986
+
+>> Quicksort
+
+100000 elements
+Excuting quicksort test for random data
+Time taken: 6.667456865310669 seconds
+Memory used: 6.17578125 MiB
+Excuting quicksort test for sorted data
+Time taken: 2.5997908115386963 seconds
+Memory used: 1.29296875 MiB
+Excuting quicksort test for reversed sorted data
+Time taken: 6.0379109382629395 seconds
+Memory used: 4.26171875 MiB
+
+1000000 elements
+Excuting quicksort test for random data
+Time taken: 41.541260957717896 seconds
+Memory used: 36.80078125 MiB
+Excuting quicksort test for sorted data
+Time taken: 21.05770492553711 seconds
+Memory used: 16.6953125 MiB
+Excuting quicksort test for reversed sorted data
+Time taken: 13.389975786209106 seconds
+Memory used: 20.078125 MiB
+
+>> Mergesort
+
+100000 elements
+Excuting mergesort test for random data
+Time taken: 3.0448811054229736 seconds
+Memory used: 3.30859375 MiB
+Excuting mergesort test for sorted data
+Time taken: 1.76055908203125 seconds
+Memory used: 1.6484375 MiB
+Excuting mergesort test for reversed sorted data
+Time taken: 1.8003911972045898 seconds
+Memory used: 1.1875 MiB
+
+1000000 elements
+Excuting mergesort test for random data
+Time taken: 13.094310998916626 seconds
+Memory used: 54.6640625 MiB
+Excuting mergesort test for sorted data
+Time taken: 10.271512031555176 seconds
+Memory used: 23.39453125 MiB
+Excuting mergesort test for reversed sorted data
+Time taken: 15.70584774017334 seconds
+Memory used: 23.734375 MiB
